@@ -1,57 +1,49 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
 <head>
-  <title>SathiAI</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MindPulseAI</title>
   <link rel="stylesheet" href="/style.css">
 </head>
-
 <body>
 
 <div class="container">
 
   <header>
-    <div class="logo">SathiAI</div>
-    <p>Your simple AI companion</p>
+    <div class="logo">MindPulseAI</div>
+    <p>Intelligent real-time conversational agent</p>
   </header>
 
   <main>
 
     <form method="POST" action="/chatbot">
-
       <div class="input-area">
-
         <input
                 type="text"
                 name="message"
-                placeholder="Ask something..."
+                placeholder="Send a prompt or query..."
+                autocomplete="off"
                 required
         >
-
-        <button type="submit">→</button>
-
+        <button type="submit" aria-label="Submit query">→</button>
       </div>
-
     </form>
 
     <section class="answer-section">
-
       <h2>Response</h2>
-
       <div class="answer-box">
-        <p> {{ANSWER}}</p>
+        <p>{{ANSWER}}</p>
       </div>
-
     </section>
 
   </main>
 
   <footer>
-    <p>SathiAI · Powered by Gemini</p>
+    <p>MindPulseAI · Powered by Gemini API</p>
   </footer>
 
 </div>
 
 </body>
-
 </html>
